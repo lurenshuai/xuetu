@@ -1,0 +1,117 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background-color: #F9F9F9;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 0.4rem;
+    display: flex;
+    flex-direction: row;
+    font-size: 0.16rem;
+    background-color: white;
+}
+.header-img{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin: 0.1rem 0.05rem;
+}
+.header-span{
+    display: inline-block;
+    margin-left: 1.35rem;
+    color: #333333;
+    line-height: 0.4rem;
+}
+.section-background{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 6%;
+    margin-top: 0.1rem;
+}
+/* 中间第一个块 */
+.section-background-one{
+    height:0.95rem;
+    box-shadow: 0 -2px 19px -1px #EDEDED;
+}
+.section-div-img{
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-left: 0.13rem;
+    line-height: 1.02rem;
+}
+.section-div-img img{
+    width: 100%;
+    height: auto;
+}
+/* 中间第一个块中的右边 */
+.section-div-text{
+   width: 82%;
+   float: right;
+   font-size: 0.16rem;
+   margin-top:0.1rem; 
+}
+.section-text-one{
+    font-size: 0.16rem;
+    font-family:PingFangSC-Medium;
+    color:rgba(51,51,51,1);
+    line-height: 0.28rem;
+   
+}
+.section-text-two{
+    color: #333333;
+    font-size: 0.12rem;
+    line-height: 0.28rem;
+}
+.section-text-two1{
+    color: #666666;
+}
+.section-text-two2{
+    color: red;
+    font-size: 0.14rem;
+}
+.detail{
+    display: flex;
+    flex-flow: row;
+    float: right;
+    width: 0.7rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    background-color: #EEFFFB;
+    color: #30D3AC;
+    margin-right: 0.2rem;
+    border-radius: 5px;
+    padding-left: 0.16rem;
+    box-sizing: border-box;
+}
+.detail-img{
+    height: 100%;
+    width: auto;
+}
+.shadow{
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(rgba(255,255,255,0) 0%,rgba(255,255,255,0.8) 10%,
+    rgba(255,255,255,1) 100%);
+    z-index: 100;
+}
+.shadow-bu{
+    width: 1.9rem;
+    height: 0.4rem;
+    background-color: #30D3AC;
+    box-shadow:0px 2px 24px 0px rgba(154,255,232,0.5);
+    border-radius:8px;
+    color: white;
+    font-size: 0.19rem;
+    text-align: center;
+    line-height: 0.4rem;
+    position: absolute;
+    top: 1.2rem;
+    left: 50%;
+    margin-left: -0.95rem;
+}

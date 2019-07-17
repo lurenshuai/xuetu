@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/search.css">
+    <script src="js/font-auto.js"></script>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/echarts.js"></script>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <img src="img/fanhui-2@3x.png" class="header-img" alt="">
+            <span class="header-span">详情</span>
+        </header>
+        <section>
+            <div class="section-background">
+                <div class="section-background-one">
+                    <div class="section-div-img"><img src="img/排行榜-第1_export@2x.png" alt=""></div>
+                    <div class="section-div-text">
+                        <div class="section-text-one">人力资源总监</div>
+                        <div class="section-text-two"> <span class="section-text-two1">所属行业：</span> 互联网/电子商务</div>
+                        <div class="section-text-two">平均薪资：<span class="section-text-two2">25000</span>
+                            <div class="detail">详细<img src="img/leftMenu@2x.png" alt="" class="detail-img"></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: relative;">
+                    <div id="main" style="width: 95%;height:2.6rem;margin: 0 auto;padding: 0.2rem 0;"></div>
+                    <div class="shadow">
+                        <div class="shadow-bu">购买后查看</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-background">
+                <div class="section-background-one">
+                    <div class="section-div-img"><img src="img/排行榜-第2_export@2x.png" alt=""></div>
+                    <div class="section-div-text">
+                        <div class="section-text-one">互联网产品经理/主管</div>
+                        <div class="section-text-two"> <span class="section-text-two1">所属行业：</span> 互联网/电子商务</div>
+                        <div class="section-text-two">平均薪资：<span class="section-text-two2">25000</span>
+                            <div class="detail">详细<img src="img/leftMenu@2x.png" alt="" class="detail-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-background">
+                <div class="section-background-one">
+                    <div class="section-div-img"><img src="img/排行榜-第3_export@2x.png" alt=""></div>
+                    <div class="section-div-text">
+                        <div class="section-text-one">项目经理/项目主管</div>
+                        <div class="section-text-two"> <span class="section-text-two1">所属行业：</span> 互联网/电子商务</div>
+                        <div class="section-text-two">平均薪资：<span class="section-text-two2">21666</span>
+                            <div class="detail">详细<img src="img/leftMenu@2x.png" alt="" class="detail-img"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 中间部分 -->
+
+</body>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var myChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    option = {
+        title: {
+            text: '薪资变化'
+        },
+        tooltip: {
+            trigger: 'axis',
+            axisPointer: {
+                type: 'cross',
+                label: {
+                    backgroundColor: '#30d3ac'
+                }
+            }
+        },
+        lineStyle: {
+            color: "#30d3ac"//折线的颜色
+        },
+        legend: {
+            data: ['薪资',]
+        },
+        toolbox: {
+            feature: {
+                // saveAsImage: {}
+            }
+        },
+        grid: {
+            left: '3%',
+            right: '4%',
+            bottom: '3%',
+            containLabel: true
+        },
+        xAxis: [
+            {
+                type: 'category',
+                boundaryGap: false,
+                data: ['1年', '3年', '5年', '7年', '9年', '11年', '13年', '15年']
+            }
+        ],
+        yAxis: [
+            {
+                type: 'value'
+            }
+        ],
+        series: [
+            {
+                name: '薪资',
+                type: 'line',
+                stack: '总量',
+                symbolSize: 12, //折线点的大小
+                color: "#30d3ac",//折线点的颜色
+                // areaStyle: {},
+                data: [5000, 10000, 12000, 15000, 13000, 20000, 22500, 25000]
+            },
+        ]
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+</script>
+
+</html>
