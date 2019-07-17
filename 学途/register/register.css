@@ -1,0 +1,229 @@
+/* html,body{
+    width: 100%;
+} */
+.all {
+    width: 100%;
+    height: 8.12rem;
+}
+
+.box-top {
+    width: 100%;
+    height: 4.54rem;
+    background-image: url(../register/img/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.xuetu {
+    padding: 0.48rem 1.6rem 0 1.6rem;
+    font-size: 0.19rem;
+    font-family: PingFangTC-Medium;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 26px;
+    text-align: center;
+}
+
+.content {
+    width: 3.51rem;
+    height: 3.12rem;
+    background-color: pink;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 24px 0px rgba(187, 187, 187, 0.5);
+    border-radius: 8px;
+    margin-top: 0.34rem;
+    padding-top: 0.12rem;
+    box-sizing: border-box;
+}
+
+.content-style {
+    width: 3.35rem;
+    height: 0.46rem;
+    border-radius: 4px;
+    border: 1px solid rgba(229, 229, 229, 1);
+    margin: 0 auto;
+    position: relative;
+}
+
+.ico-left {
+    width: 0.28rem;
+    height: 0.22rem;
+    position: absolute;
+    left: 0.14rem;
+    top: 0.14rem;
+}
+
+.ico-left-img {
+    width: 100%;
+    height: 100%;
+}
+
+.school-input {
+    outline: none;
+    border: none;
+    margin-top: 0.14rem;
+    text-align: right;
+    box-sizing: border-box;
+    width: 1.86rem;
+}
+
+.fonts {
+    display: inline-block;
+    width: 0.66rem;
+    height: 0.19rem;
+    font-size: 0.14rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #666;
+    line-height: 0.19rem;
+    padding-left: 0.46rem;
+    border-right: 1px solid rgba(229, 229, 229, 1);
+    margin-top: 0.15rem;
+}
+
+.ico-right-img {
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0.12rem;
+    right: 0.08rem;
+}
+
+
+/* 按钮 */
+.box-bottom {
+    width: 100%;
+    text-align: center;
+}
+
+.buttons {
+    width: 3.51rem;
+    height: 0.48rem;
+    /* background: #30D3AC; */
+    background: #ebebeb;
+    border-radius: 0.08rem;
+    border: none;
+    font-size: 0.19rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #666;
+}
+
+.foot {
+    width: 1.34rem;
+    height: 0.05rem;
+    background: rgba(51, 51, 51, 1);
+    border-radius: 1rem;
+    margin: 2.68rem auto 0 auto;
+
+}
+
+.margin-top12 {
+    margin-top: 0.12rem;
+}
+
+/* 清空 */
+.clears {
+    width: 0.7rem;
+    height: 0.24rem;
+    border-radius: 0.12rem;
+    border: 0.01rem solid rgba(229, 229, 229, 1);
+    margin: 0.26rem auto 0rem auto;
+    position: relative;
+}
+
+.clear-img {
+    width: 0.24rem;
+    height: 0.24rem;
+}
+
+.clear-font {
+    font-size: 0.12rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+    position: absolute;
+    top: 0.03rem;
+    left: 0.26rem;
+}
+
+/* 点击出现的下拉 */
+.bottom-one {
+    width: 100%;
+    height: 3.11rem;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+
+.bottom-one>li {
+    vertical-align: middle;
+    padding: 0.1rem 0 0.1rem 0;
+    padding-left: 0.13rem;
+    box-sizing: border-box;
+    font-size: 0.14rem;
+}
+
+.choose-img {
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    border: 0.01rem solid transparent;
+    box-sizing: border-box;
+    margin-right: 0.1rem;
+    vertical-align: -0.01rem;
+}
+
+.bor {
+    border: 0.01rem dashed black !important;
+}
+
+.bottom-img-choose {
+    width: 0.2rem;
+    height: 0.2rem;
+    vertical-align: -0.05rem;
+}
+
+.bottom-one-img {
+    width: 0.20rem;
+    height: 0.18rem;
+}
+
+.bottom-span {
+    display: inline-block;
+    width: 0.66rem;
+    height: 0.19rem;
+    font-size: 0.14rem;
+    font-family: PingFangSC-Regular;
+    font-weight: 400;
+    color: #333333;
+    line-height: 0.19rem;
+    padding-left: 0.14rem;
+    border-right: 1px solid rgba(229, 229, 229, 1);
+}
+
+.bottom-one-imgs {
+    width: 0.15rem;
+    height: 0.12rem;
+}
+
+.bottom-one-input {
+    border: none;
+}
+
+.education-none {
+    display: none;
+}
+
+.school-none {
+    display: none;
+}
+
+.major-none {
+    display: none;
+}
+
+.city-none {
+    display: none;
+}
