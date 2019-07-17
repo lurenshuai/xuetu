@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <script src="js/font-auto.js"></script>
+    <link rel="stylesheet" href="css/base.css">
+    <script src="js/zepto.min.js"></script>
+    <link rel="stylesheet" href="css/login-style.css">
+    <style type="text/css">
+    	.user_hint{
+			position: absolute;
+			right: 24px;
+			top: 76px;
+		}
+		.email_hint{
+			position: absolute;
+			right: 24px;
+			top: 154px;
+		}
+		.mobile_hint{
+			position: absolute;
+			right: 24px;
+			top: 230px;
+		}
+		.password_hint{
+			position: absolute;
+			right: 24px;
+			top: 301px;
+		}
+		.confirm_hint{
+			position: absolute;
+			right: 24px;
+			top: 379px;
+		}
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <!-- 头部 -->
+        <header>
+            注册
+        </header>
+        <!-- 头部 -->
+        <!-- 注册表 -->
+        <section>
+            <form action="">
+            <div class="section-clear f12">
+              <input type="reset" value="清除">
+            </div>
+
+            <div class="section-input">
+                    <div class="input-box mt30">登陆用户名</div>
+                    <input type="text" name="" id="user" placeholder="请输入登陆用户名" class="reg_user">
+					<span class="user_hint"></span>
+					<span style="color: red;display: none;" class="fr u">请输入正确的用户名</span>
+
+                    <div class="input-box">邮箱</div>
+                    <input type="text" name="" id="email" placeholder="请输入邮箱"  class="reg_email">
+					<span class="email_hint"></span>
+					<span style="color: red;display: none;" class="fr e">请输入正确的邮箱</span>
+                    
+					
+                    <div class="input-box">手机号</div>
+                    <input type="number" name="" id="iphone" placeholder="请输入手机号" class="reg_mobile">
+					<span class="mobile_hint"></span>
+                    <span style="color: red;display: none;" class="fr m">请输入正确的手机号</span>
+					
+                    <div class="input-box">登陆密码</div>
+                    <input type="password" name="" id="pwd" placeholder="请输入登陆密码" class="reg_password">
+					 <span class="password_hint"></span>
+					 <span style="color: red;display: none;" class="fr p">请输入正确的密码</span>
+
+
+                    <div class="input-box">确认密码</div>
+                    <input type="password" name="" id="pwd" placeholder="请输入确认密码"  class="reg_confirm">
+					 <span class="confirm_hint"></span>
+					  <span style="color: red;display: none;" class="fr rp">密码不一致</span>
+
+                    <div class="agree f12 mt20">
+                        <span class="agree-span">
+                            <input type="checkbox" class="login-btn-checkbox-agree-checkbox" name="">
+                        </span>
+                        确认已阅读<a href="#">授权用户协议</a>
+                    </div>
+               
+            </div>
+        </form>
+        </section>
+        <!-- 注册表 -->
+        <!-- 注册按钮 -->
+        <footer>
+            <button class="login-btn">
+                注册
+            </button>
+        </footer>
+        <!-- 注册按钮 -->
+    </div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+    var user_Boolean = false;
+var password_Boolean = false;
+var varconfirm_Boolean = false;
+var emaile_Boolean = false;
+var Mobile_Boolean = false;
+$('.reg_user').blur(function(){
+  if ((/^[a-z0-9_-]{4,8}$/).test($(".reg_user").val())){
+    $('.user_hint').html("✔").css("color","green");
+    user_Boolean = true;
+	$('.u').css("display","none")
+  }else {
+    $('.user_hint').html("×").css("color","red");
+    user_Boolean = false;
+	$('.u').css("display","block")
+  }
+});
+$('.reg_email').blur(function(){
+  if ((/^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/).test($(".reg_email").val())){
+    $('.email_hint').html("✔").css("color","green");
+    emaile_Boolean = true;
+	$('.e').css("display","none")
+  }else {
+    $('.email_hint').html("×").css("color","red");
+    emaile_Boolean = false;
+	$('.e').css("display","block")
+  }
+});
+$('.reg_mobile').blur(function(){
+  if ((/^1[34578]\d{9}$/).test($(".reg_mobile").val())){
+    $('.mobile_hint').html("✔").css("color","green");
+    Mobile_Boolean = true;
+	$('.m').css("display","none")
+  }else {
+    $('.mobile_hint').html("×").css("color","red");
+    Mobile_Boolean = false;
+	$('.m').css("display","block")
+  }
+});
+$('.reg_password').blur(function(){
+  if ((/^[a-z0-9_-]{6,16}$/).test($(".reg_password").val())){
+    $('.password_hint').html("✔").css("color","green");
+    password_Boolean = true;
+	$('.p').css("display","none")
+  }else {
+    $('.password_hint').html("×").css("color","red");
+    password_Boolean = false;
+	$('.p').css("display","block")
+  }
+});
+$('.reg_confirm').blur(function(){
+  if (($(".reg_password").val())==($(".reg_confirm").val())){
+    $('.confirm_hint').html("✔").css("color","green");
+    varconfirm_Boolean = true;
+	$('.rp').css("display","none")
+  }else {
+    $('.confirm_hint').html("×").css("color","red");
+    varconfirm_Boolean = false;
+	$('.rp').css("display","block")
+  }
+});
+
+    //同意选框
+    var checkbox = $('.agree-span');
+    checkbox.click(function(){
+       $('.login-btn-checkbox-agree-checkbox').prop('checkbox',function(i,v){
+           return !v
+       })
+       if($('.login-btn-checkbox-agree-checkbox').prop('checkbox') == true){
+         $(this).addClass('checkbox-active');
+       }else{
+        $(this).removeClass('checkbox-active');
+       }
+    })
+    //账户名密码获取焦点边框变色
+   var $input =  $('.section-input input');
+   //选中的判断
+        $input.bind({
+            'focus':function(){
+                $(this).addClass('inputactive');
+            },
+            'blur':function(){
+                $(this).removeClass('inputactive');
+                //登陆可点击状态出现的情况
+            }
+        })
+        $('.login-btn-checkbox-agree-checkbox').click(function(){
+			if( $('.login-btn-checkbox-agree-checkbox').prop('checked') ){
+				$.each($input,function(i,v){
+	                if($(this).val().trim()!=''){
+	                    $('.login-btn').addClass('login-btnactive');
+	                }else{
+	                    $('.login-btn').removeClass('login-btnactive');
+	                }
+	             })
+			}
+			else{
+				$('.login-btn').removeClass('login-btnactive');
+			}
+        });
+		
+		$('.login-btn').click(function(){
+  if(user_Boolean && password_Boolean && emaile_Boolean && Mobile_Boolean == true){
+    alert("注册成功");
+  }else {
+    alert("请完善信息");
+  }
+});
+})
+
+</script>
+</html>
