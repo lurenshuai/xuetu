@@ -1,0 +1,123 @@
+.box{
+    width: 100%;
+    height: 100%;
+    background:rgba(249,249,249,1);
+}
+.head{
+    width: 100%;
+    height: 0.51rem;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 0.1rem;
+    box-sizing: border-box;
+}
+.head img{
+    float: left;
+}
+.head .xian{
+    width:36px;
+    height:25px;
+    font-size:18px;
+    font-family:PingFangSC-Medium;
+    font-weight:500;
+    color:rgba(51,51,51,1);
+    line-height:25px;
+}
+/* 中间部分 */
+.sect{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.13rem;
+}
+.sect-cont{
+    display: flex;
+    flex-direction: row;
+    width: 3.51rem;
+    height: 1.02rem;
+    margin: 0 auto;
+    background-color:rgba(255,255,255,1);
+    box-shadow:0px 2px 19px 0px rgba(237,237,237,0.5);
+    border-radius:8px;
+    margin-bottom: 0.13rem;
+}
+.sect-cont-left{
+    position: relative;
+    width: 20%;
+    height: 100%;
+    background-color:#fff;
+    border-radius:8px;
+}
+.sect-cont-left img{
+    position: absolute;
+    left: 8px;
+    top: 0.51rem;
+    margin-top: -0.2rem;
+}
+.banjiao{
+    width: 0.3rem;
+    height: 100%;
+    background-color:rgba(255,220,79,1);
+    border-radius: 8px 50%  50%  8px;
+}
+.sect-cont-cont{
+    padding: 0.14rem 0;
+    width: 55%;
+    height: 100%;
+    line-height: 0.26rem;
+    box-sizing: border-box;
+    font-size: 0.12rem;
+    color: #666;
+}
+.sect-cont-right{
+    position: relative;
+    width: 20%;
+    height: 100%;
+}
+.sc-tit{
+    font-size: 0.16rem;
+    color: #333;
+    font-weight: 500;
+}
+.wan{
+    color: #333;
+}
+.pri{
+    color:#FC4D45;
+}
+.show{
+    position: relative;
+    position: absolute;
+    bottom: 15%;
+    width: 0.7rem;
+    height: 0.24rem;
+    line-height: 0.24rem;
+    background: #EEFFFB;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #30D3AC;
+    border-radius:5px;
+}
+.show img{
+    position: absolute;
+    top: 0.04rem;
+    right: 0.02rem;
+    width: 0.18rem;
+    height: 0.18rem;
+}
+.banjiao1{
+    background: none;
+}
+.circle{
+    width: 0.31rem;
+    height: 0.31rem;
+    line-height: 0.31rem;
+    position: absolute;
+    left: 8px;
+    top: 0.55rem;
+    margin-top: -0.2rem;
+    border-radius: 50%;
+    background:rgba(250,250,250,1);
+    font-weight:600;
+    font-size: 0.19rem;
+    text-align: center;
+}
