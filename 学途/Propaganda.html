@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/Propaganda-style.css">
+    <script src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+    <!-- 内容弹性盒子外套 -->
+    <div class="top">
+        <span class="text">学途</span>
+        <!-- 内容区域 -->
+        <div class="conter">
+            <div class="conter-div">
+                <span class="conter-text">“考研择校择专业测评”工具</span>
+                <span class="conter-Member">会员价:<div class="Membership-price">238元/季度</div></span>
+                <div class="conter-tu">
+                    <div class="left">
+                        <img class="m-logo" src="img/left.png" alt="">
+                        <img class="check" src="img/check.png" alt="">
+                    </div>
+                    <div class="conters">
+                        <img class="m-logo" src="img/conter.png" alt="">
+                        <img class="check" src="img/check.png" alt="">
+                    </div>
+                    <div class="right">
+                        <img class="m-logo" src="img/right.png" alt="">
+                        <img class="check" src="img/check.png" alt="">
+                    </div>
+                </div>
+                <span class="conter-top-text">* 付费会员可以使用该测评工具，同时获赠数万份考研历年真题和学习笔记</span>
+            </div>
+            <div class="QR-code">
+                <img src="" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script>
+
+    //字体
+    fnResize()
+    window.onresize = function () {
+        fnResize()
+    }
+    function fnResize() {
+        var deviceWidth = document.documentElement.clientWidth ||
+            window.innerWidth
+        if (deviceWidth >= 750) {
+            deviceWidth = 750
+        }
+        if (deviceWidth <= 320) {
+            deviceWidth = 320
+        }
+        document.documentElement.style.fontSize = (deviceWidth / 7.5 * 2) + 'px'
+    }
+</script>

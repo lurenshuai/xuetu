@@ -1,0 +1,95 @@
+body,html{
+    width: 100%;
+    height: 100%;
+   font-family: PingFangSC-Medium;
+}
+body{
+    height: auto;
+    background:url(../img/Propaganda-bg.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+.top{
+    display: flex;
+    flex-direction: column;
+    align-self:flex-end;
+    width: 100%;
+    height: 100%;
+    padding: 0.1rem;
+}
+.text{
+    font-size: 0.24rem;
+    color: #b9b4b6;
+}
+.conter{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width: 95%;
+    border-radius: 0.06rem;
+    background-color: black;
+    padding: 0.1rem;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0rem;
+    margin-bottom:0.13rem; 
+}
+img{
+    width: 100%;
+    height: 100%;
+    background-size: 100%
+}
+.check{
+    width: 0.05rem;
+    height: 0.05rem;
+}
+.m-logo{
+   width: 0.17rem;
+   height: 0.17rem;
+}
+.QR-code{
+    width: 1.25rem;
+    height: 0.89rem;
+    background:url(../img/QB-CODE-BG.PNG) no-repeat center center; 
+    background-size: 100%
+}
+.conter-text{
+    font-size: 0.14rem;
+    color: #d4d3d4;
+    display: flex;
+    flex-direction: column
+}
+.conter-tu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 60%; 
+}
+.left,.conters,.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conter-Member{
+    display: flex;
+    flex-direction: row;
+    font-size: 0.08rem;
+    color: #d4d3d4;
+    align-items: center;
+}
+.Membership-price{
+    display: flex;
+    align-items: flex-end;
+}
+.Membership-price{
+    font-size: 0.21rem;
+    color: red;
+    margin-left: 0.1rem;
+}
+.conter-top-text{
+    color: #d4d3d4;
+    font-size: 0.03rem;
+    transform: scale(0.5);
+    position:absolute;
+    left: -0.6rem;
+    bottom: 0.1rem;
+}
