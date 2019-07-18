@@ -1,0 +1,31 @@
+
+.jian{
+    position: absolute;
+    left: 0.05rem;
+    top: 0.1rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    background: url(../img/fanhui-2复制\ 2@2x.png) no-repeat center center;
+    background-size: 0.11rem 0.20rem;
+}
+.title{
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 0.18rem;
+    font-weight: 900;
+}
+header{
+    padding: 0.1rem 0;
+}
+.shou{
+    padding:0.08rem 0.12rem;
+    color: #666;
+    background-color: rgba(245,245,245,1);
+    font-size: 0.12rem;
+}
+.zhu{
+    font-size: 0.12rem;
+    padding: 0.1rem 0.18rem;
+    display: none;
+}
